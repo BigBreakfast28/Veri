@@ -2,26 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+h1 {
+  font-style: serif;
+  font-size:75px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+p {
+  text-align: center;
+  margin: 50px;
+  margin-left: 50px;
+  padding: 50px;
+  display:block;
+  
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.nav-bar {
+  background-color: green;
+  overflow: hidden;
+}
+ 
+.nav-bar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav-bar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav-bar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+h2 {
+  font-size:32px;
+  font-style:serif;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 10px;
+
+}
+
+.footer {
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  
+  text-align: center;
+}
+
+.contact-me {
+  background-color:white;
+  overflow: hidden;
+}
+.contact-me a:visted {
+color:purple;
+} 
+
+.contact-me a:hover {
+color:blue;
 }
